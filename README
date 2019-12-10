@@ -1,3 +1,5 @@
 This project allows the user to grab points on a 'cloth' and drag it around. Any point that you click on will turn into an anchor that is not affected by gravity. The default number of anchors is 2 (though this can be changed at the top of the MassSpringSystem script). If two anchors are already set and you click on a new point, the anchor that was set the longest ago will be dropped to make room for the new anchor. 
 
+The physics model that is used to make this cloth is relatively simple. Each point on the mesh is connected to all points adjacent to it with springs. 
+
 This 'cloth' is by no means perfect. It stretches a lot, the points do not collide with themselves, and the points can dance sometimes. I hope to fix these problems in further iterations
